@@ -15,7 +15,6 @@ builder.Services.AddDbContext<MasterContext>( opt =>
 builder.Services.AddScoped<ITripService, TripService>();
 var app = builder.Build();
 
-app.UseAuthorization();
 
 app.MapControllers();
 
